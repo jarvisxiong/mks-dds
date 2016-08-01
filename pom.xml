@@ -160,13 +160,23 @@
   		<type>jar</type>
   		<scope>compile</scope>
   	</dependency>
-  	<dependency>
+
+<!--   	<dependency>
   		<groupId>com.sftp</groupId>
   		<artifactId>com-sftp</artifactId>
   		<version>1.0.0</version>
   		<type>jar</type>
   		<scope>compile</scope>
+  	</dependency> -->
+		
+  	<dependency>
+  		<groupId>com.sftp</groupId>
+  		<artifactId>com-sftp</artifactId>
+  		<version>1.0.0</version> 
+  		<scope>system</scope>
+        <systemPath>${project.basedir}/src/main/resources/lib/com-sftp-1.0.0.jar</systemPath>
   	</dependency>
+	
   	<dependency>
   		<groupId>org.apache.ftpserver</groupId>
   		<artifactId>ftpserver-core</artifactId>
@@ -212,6 +222,8 @@
   		<groupId>jp.sourceforge.qrcode</groupId>
   		<artifactId>QRCode</artifactId>
   		<version>1.0.0</version>
+  		<scope>system</scope>
+        <systemPath>${project.basedir}/src/main/resources/lib/QRCode-1.0.0.jar</systemPath>
   	</dependency>
   	 
 	<dependency>
